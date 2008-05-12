@@ -133,8 +133,8 @@ $G["modules"]["sequence"] = function (elem, father, templateId, attributes, plac
 	
 	if (attributes["duration"] && attributes["duration"].length) { seqelem.duration = Number(attributes["duration"]); }
 	if (attributes["interval"] && attributes["interval"].length) { seqelem.interval = Number(attributes["interval"]); }
-	if (attributes["start"] && attributes["start"].length) { seqelem.start = Number(attributes["start"]); }
-	if (attributes["end"] && attributes["end"].length) { seqelem.end = Number(attributes["end"]); }
+	if (attributes["start"] && attributes["start"].length) { seqelem.start = Number(attributes["start"].replace("%", "")); }
+	if (attributes["end"] && attributes["end"].length) { seqelem.end = Number(attributes["end"].replace("%", "")); }
 	if (attributes["type"] && attributes["type"].length) { seqelem.type = $G["tolower"](attributes["type"]); }
 	if (attributes["id"] && attributes["id"].length) { seqelem.id = attributes["id"]; }
 			

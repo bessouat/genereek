@@ -68,15 +68,18 @@ $G["sequenceFct"] = function (duration, start, end, interval, callback, type, id
 	elem.father = father;
 	elem.staticVal = elem.end-elem.start;
 	elem.date = new Date();
+
 	elem.type = $G["sequence"][type];
 	elem.callback = callback;
-	elem.duration = (duration/interval);
+	elem.duration = duration;
+	
 	elem.fct = function ()
 	{
 		if (!this.done) 
 		{
+			var currentdate = new Date();
+			this.time = ((currentdate.getTime())-(this.date.getTime()));
 			var retVal = this.type(this.time,this.startSet,this.endSet,this.duration);
-			this.time = ((new Date())-this.date)/interval;
 			var val = (retVal/100)*this.staticVal;
 			var valmod = val%1;
 			val = val-valmod;
@@ -152,7 +155,7 @@ $G["modules"]["sequence"] = function (elem, father, templateId, attributes, plac
 		$G["sequence"][seqelem.id] = new Array();
 	}
 	catch (e) {}
-	
+
 	seqelem.appendChild = function (newElem)
 	{
 		if (newElem != null && newElem.variable)

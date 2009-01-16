@@ -60,13 +60,17 @@ $G["modules"]["isfalse"] = function (elem, father, templateId, attributes, place
 		if (attributes["targetbis"]) infoV["targetbis"] = attributes["targetbis"];
 		if (attributes["regexp"]) infoV["regexp"] = attributes["regexp"];
 		if (attributes["request"]) infoV["request"] = (attributes["request"]=="true")?true:false;
+		if (attributes["eval"]) infoV["eval"] = eval(attributes["eval"])?true:false;
+		
 		if (attributes["function"]) infoV["function"] = eval(attributes["function"]);
 
-		infoV["txt"] = $G["strip_tags"]($G["get"](infoV["target"]));
-		infoV["txtbis"] = $G["strip_tags"]($G["get"](infoV["targetbis"]));
+		if (infoV["target"]) infoV["txt"] = $G["strip_tags"]($G["get"](infoV["target"]));
+		if (infoV["targetbis"]) infoV["txtbis"] = $G["strip_tags"]($G["get"](infoV["targetbis"]));
 
 		var validate = true;
 		if (infoV["function"] && infoV["function"](infoV)) { validate = false; }
+		
+		if (infoV["eval"] != undefined && infoV["eval"] === false) { validate = false; }
 		
 		var reg = new RegExp(infoV["regexp"], "gi");
 		if (infoV["regexp"] && infoV["txt"].search(reg) == -1) { validate = false; }

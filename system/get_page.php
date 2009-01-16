@@ -12,7 +12,7 @@
 <?
 function PageEncode($content)
 {
-	return ereg_replace(">[ |\t]*<", ">\\n<", ereg_replace("\n", "\\n", ereg_replace("\r", "\\r", ereg_replace("'", "\'", $content))));
+	return  ereg_replace("< ", htmlspecialchars("< "), ereg_replace("&", htmlentities("&"),ereg_replace(">[ |\t]*<", ">\\n<", ereg_replace("\n", "\\n", ereg_replace("\r", "\\r", ereg_replace("'", "\'", $content))))));
 }
 
 $page = join('', @file($_REQUEST['data']));

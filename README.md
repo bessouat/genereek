@@ -1,5 +1,7 @@
 <img id="logoImg" src="img/logo.jpg" alt="Logo"/>
 
+#Introduction
+
 *GenerEEK* is a *web framework* build to make new web technology *simple* and *funky*. 
 
  * *Most of* the web framework are *difficult to use *(_if you don't know very well development method's_) *or too simple* to do everything you want. 
@@ -23,7 +25,7 @@ _You can use others new technology too with external program/plugin, but *you do
 
 <a href="http://www.genereek.com/">... watch the demo and enjoy</a>
 
-#Introduction
+#Demontration
 
 Here we'll describe the <a href="http://www.genereek.com/">genereek.com</a> homepage application.
 

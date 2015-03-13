@@ -23,11 +23,11 @@ Here we propose a system to use all the good part of the *new technology*.
 
 _You can use others new technology too with external program/plugin, but *you don't need it* to make some funky application ..._
 
-<a href="http://www.genereek.com/">... watch the demo and enjoy</a>
+<a target="_blank" href="http://www.genereek.com/">... watch the demo and enjoy</a>
 
 #Demontration
 
-Here we'll describe the <a href="http://www.genereek.com/">genereek.com</a> homepage application.
+Here we'll describe the <a target="_blank" href="http://www.genereek.com/">genereek.com</a> homepage application.
 
 Behind this page and his image there is 4 distinct application hidden :
   * a title modification
@@ -140,7 +140,7 @@ The last move is set on a click left of the mouse and do the same thing that bef
 VOILA ! You click left somewhere and the image follow the mouse position ... 
 #The control module
 
-The control module is a <a href="system/addons/modules/control.js">piece of javascript</a> set to listen and manage event/time on the window.
+The control module is a <a target="_blank" href="system/addons/modules/control.js">piece of javascript</a> set to listen and manage event/time on the window.
 
 This tag listen by default all the window (called "GLOBAL") for a mouse "click" and execute all his content, So if you use it like ...
 
@@ -272,7 +272,7 @@ middle
 
 #The sequence module
 
-The sequence module is a <a href="system/addons/modules/sequence.js">piece of javascript</a> set to manage a natural move for the transition (position, color, focus, etc.) of an object from a value A to a value B.
+The sequence module is a <a target="_blank" href="system/addons/modules/sequence.js">piece of javascript</a> set to manage a natural move for the transition (position, color, focus, etc.) of an object from a value A to a value B.
 
 This module use no effect by default and each transition take 1 second, but you can manage default value with some optional tags :
 
@@ -350,7 +350,7 @@ this will start from *top 0px and left 0px* and make move the div "mydiv" to *to
 
 #The css manager module
 
-The CSS module is a <a href="system/addons/modules/css.js">piece of javascript</a> set to manage CSS in the page.
+The CSS module is a <a target="_blank" href="system/addons/modules/css.js">piece of javascript</a> set to manage CSS in the page.
 
 This module have no default value so you need to set everything you need to set CSS on your page :
 
@@ -382,32 +382,32 @@ div {
 
 #The data manager module
 
-The data module is a <a href="system/addons/modules/data.js">piece of javascript</a> set to manage data in the page.
+The data module is a <a target="_blank" href="system/addons/modules/data.js">piece of javascript</a> set to manage data in the page.
 
 this topic need to be complete ...
 
 
 #The title manager module
 
-The title module is a <a href="system/addons/modules/title.js">piece of javascript set to manage title in the page.
+The title module is a <a target="_blank" href="system/addons/modules/title.js">piece of javascript set to manage title in the page.
 
 this topic need to be complete ...
 
 #The status manager module
 
-The status module is a <a href="system/addons/modules/status.js">piece of javascript</a> set to manage status in the page.
+The status module is a <a target="_blank" href="system/addons/modules/status.js">piece of javascript</a> set to manage status in the page.
 
 this page need to be complete ...
 
 #The enable module manager
 
-The enable module is a <a href="system/addons/modules/enable.js">piece of javascript</a> set to enable others module in the page.
+The enable module is a <a target="_blank" href="system/addons/modules/enable.js">piece of javascript</a> set to enable others module in the page.
 
 this page need to be complete ...
 
 #The disabel module manager
 
-The disable module is a <a href="system/addons/modules/disable.js">piece of javascript</a> set to disable others module in the page.
+The disable module is a <a target="_blank" href="system/addons/modules/disable.js">piece of javascript</a> set to disable others module in the page.
 
 this page need to be complete ...
 
